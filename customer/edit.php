@@ -8,6 +8,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $email=$_POST['email'];
     $hp=$_POST['hp'];
     $sql="update customer set nama_customer='$nama_customer',alamat='$alamat',kota='$kota',email='$email',hp='$hp' where kode_customer='$kode_customer'";
-    update($sql);
+    update($sql,"customer");
 }
 ?>

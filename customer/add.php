@@ -9,5 +9,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $hp = $_POST['hp'];
     $sql = "insert into customer(nama_customer,alamat,kota,email,hp) values ('$nama_customer','$alamat','$kota','$email','$hp')";
-    insert($sql, "kategori");
+    insert($sql, "customer");
 }

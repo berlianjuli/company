@@ -16,7 +16,7 @@
    * @param query dalam sql
    * 
    **/
-  function insert($sql){
+  function insert($sql,$location){
     global $conn;
     if($conn->query($sql)){
         echo "berhasil";
@@ -31,7 +31,7 @@
    * @param query dalam sql
    * 
    **/
-  function update($sql){
+  function update($sql,$location){
     global $conn;
     if($conn->query($sql)){
         echo "update berhasil";
@@ -46,7 +46,7 @@
    * @param query dalam sql
    * 
    **/
-  function delete($sql){
+  function delete($sql,$location){
     global $conn;
     if($conn->query($sql)){
         echo "delete berhasil";

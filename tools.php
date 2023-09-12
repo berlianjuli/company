@@ -20,7 +20,7 @@
     global $conn;
     if($conn->query($sql)){
         echo "berhasil";
-        header("location:http://localhost/company/customer/");
+        header("location:http://localhost/company/$location/");
     }else{
         echo "error";
     }
@@ -35,7 +35,7 @@
     global $conn;
     if($conn->query($sql)){
         echo "update berhasil";
-        header("location:http://localhost/company/customer/");
+        header("location:http://localhost/company/$location/");
     }else{
         echo "update gagal";
     }
@@ -50,7 +50,7 @@
     global $conn;
     if($conn->query($sql)){
         echo "delete berhasil";
-        header("location:http://localhost/company/customer/");
+        header("location:http://localhost/company/$location/");
     }else{
         echo "delete gagal";
     }
